@@ -38,3 +38,7 @@ footer {
   margin-top: 200px;
   padding: 20px;
   text-align: center; }
+  .home_topic {
+    justify-content: center;
+    margin-left: 630px;
+  }
