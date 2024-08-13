@@ -1,0 +1,48 @@
+Strona Serwera Discord
+Witaj na stronie informacyjnej Twojego serwera Discord! To miejsce, gdzie znajdziesz wszystkie niezbędne informacje o naszym serwerze oraz jak do nas dołączyć.
+
+🎯 O Projekcie
+Ta strona została stworzona, aby zapewnić centralne źródło informacji dla wszystkich obecnych i potencjalnych członków naszego serwera Discord. Znajdziesz tutaj:
+
+Link do serwera: Szybki dostęp do naszego serwera Discord.
+Zasady i regulaminy: Co trzeba wiedzieć przed dołączeniem.
+Kategorie i kanały: Przegląd struktury serwera i jego funkcji.
+Wsparcie i Kontakt: Jak się z nami skontaktować w razie potrzeby.
+🌐 Link do Serwera
+Aby dołączyć do naszego serwera, kliknij poniższy link:
+Dołącz do serwera Discord
+
+📜 Zasady i Regulaminy
+Przed dołączeniem do naszego serwera, prosimy o zapoznanie się z naszymi zasadami:
+
+Zasady serwera
+FAQ
+🗂 Kategorie i Kanały
+Nasz serwer jest podzielony na różne kategorie i kanały, aby ułatwić organizację:
+
+Ogólne: Kanały do ogólnych rozmów i aktualności.
+Wsparcie: Kanały, gdzie możesz zadać pytania lub uzyskać pomoc.
+Tematyczne: Kanały dyskusyjne dotyczące różnych zainteresowań.
+🛠️ Wsparcie i Kontakt
+Jeśli masz jakiekolwiek pytania lub potrzebujesz pomocy, skontaktuj się z nami przez:
+
+E-mail: support@twojadomena.com
+Bezpośrednio na Discordzie: @TwójNick
+📂 Jak Edytować Stronę
+Jeśli chcesz wprowadzić zmiany na tej stronie, oto jak możesz to zrobić:
+
+Klonowanie repozytorium:
+bash
+Skopiuj kod
+git clone https://github.com/TwojeRepozytorium
+Wprowadzenie zmian:
+Edytuj pliki w katalogu docs w lokalnym repozytorium.
+Wysłanie zmian:
+bash
+Skopiuj kod
+git add .
+git commit -m "Twoja wiadomość commit"
+git push origin main
+🚀 Rozwój
+Jeśli masz pomysły na nowe funkcje lub ulepszenia, zapraszamy do zgłaszania propozycji i pull requestów!
+
