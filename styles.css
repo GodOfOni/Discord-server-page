@@ -1,90 +1,118 @@
-/* Globalny styl dla body */
+/* Global styles */
 body {
-  font-family: "New Amsterdam", sans-serif;
+  font-family: "Agu Display", sans-serif; /* Use Agu Display font */
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.05em; /* Zwiększenie odstępów między literami */
-  background-color: #36393f;
-  color: #ffffff;
+  background-color: #2f3136; /* Discord-like dark background */
+  color: #dcddde; /* Light gray text */
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ustawienie minimalnej wysokości, aby footer zawsze był na dole */
+  min-height: 100vh;
+  justify-content: space-between; /* Ensures header at top, footer at bottom */
 }
 
-/* Stylizacja nagłówka */
 header {
-  background-color: #7289da;
-  padding: 20px;
-  text-align: center;
+  background-color: #7289da; /* Discord blue */
+  padding: 20px 0;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Space out logo and title/nav */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* Stylizacja nawigacji */
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 20px;
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: #b9bbbe;
   text-decoration: none;
+  font-size: 16px;
 }
 
 nav ul li a:hover {
-  color: #bbbbbb; /* Zmiana koloru na jaśniejszy szary dla lepszej widoczności */
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-/* Stylizacja głównej sekcji */
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px; /* Adjust logo size */
+  height: auto;
+}
+
+/* Main content */
 main {
-  flex: 1; /* Umożliwia main rozciąganie się w dostępnej przestrzeni */
+  flex: 1;
   padding: 20px;
+  text-align: center;
 }
 
-/* Stylizacja sekcji */
-section {
+.home_topic {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home_text {
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
-/* Stylizacja stopki */
-footer {
-  background-color: #7289da;
-  text-align: center;
-  padding: 10px 20px;
+.container_pictures {
+  padding-top: 30px;
 }
 
-/* Stylizacja sekcji głównej */
-.home_topic,
-.home_text {
-  text-align: center;
-}
-
-/* Stylizacja galerii */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Odstęp między zdjęciami */
-  justify-content: center; /* Wyśrodkowanie galerii */
+  gap: 20px;
+  justify-content: center;
 }
 
-.gallery img {
-  width: 400px; /* Szerokość miniatur */
+.thumbnail {
+  width: 300px;
+  height: auto;
   cursor: pointer;
-  transition: transform 0.2s; /* Dodaje efekt powiększenia przy najechaniu */
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
 }
 
-.gallery img:hover {
-  transform: scale(1.1); /* Powiększenie przy najechaniu */
+.thumbnail:hover {
+  transform: scale(1.1);
 }
 
-/* Stylizacja modal */
+/* Modal for enlarging images */
 .modal {
   display: none;
   position: fixed;
@@ -93,23 +121,22 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
   padding-top: 60px;
 }
 
-.modal-content,
-#caption {
+.modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
-  text-align: center;
-  color: #ccc;
 }
 
 #caption {
+  text-align: center;
+  color: #fff;
   padding: 10px 0;
+  font-size: 16px;
 }
 
 .close {
@@ -125,11 +152,19 @@ footer {
 .close:hover,
 .close:focus {
   color: #bbb;
-  text-decoration: none;
   cursor: pointer;
 }
 
-/* Stylizacja kontenera na zdjęcia */
-.container_pictures {
-  padding: 30px 0 0 0;
+/* Footer styles */
+footer {
+  background-color: #2f3136;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #40444b;
+  color: #b9bbbe;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
 }
