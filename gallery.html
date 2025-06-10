@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discord M&A Page</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - M&A</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <!-- Header -->
+
   <header>
-    <!-- Logo -->
     <div class="logo">
-      <img src="images/dbd.png" alt="Logo" class="logo-img">
+      <img src="pictures/dbd.jpg" alt="Logo" class="logo-img">
     </div>
-    <!-- Tytuł i Nawigacja -->
     <div class="header-content">
-      <h1>Welcome to M&A Discord Theme Page</h1>
+      <h1>M&A Gallery</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Main content -->
   <main>
-    <section id="home">
-      <h2 class="home_topic">Gallery Section</h2>
-      <p class="home_text">This is the gallery section of our Discord Theme Page.</p>
-      
-      <div class="container_pictures">
-        <div class="gallery">
-          <img src="pictures/fallguys.png" alt="Fall Guys" class="thumbnail">
-          <img src="pictures/Green Hell.png" alt="Green Hell" class="thumbnail">
-          <img src="pictures/Outriders.png" alt="Outriders" class="thumbnail">
-        </div>
-
-        <!-- Modal for enlarging images -->
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
+    <section class="container_pictures">
+      <h2 class="home_topic">Our Gallery</h2>
+      <div class="gallery">
+        <img src="pictures/image1.jpg" alt="Image 1" class="thumbnail" onclick="openModal(this)">
+        <img src="pictures/image2.jpg" alt="Image 2" class="thumbnail" onclick="openModal(this)">
+        <img src="pictures/image3.jpg" alt="Image 3" class="thumbnail" onclick="openModal(this)">
+        <!-- Dodaj więcej zdjęć -->
       </div>
     </section>
+
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+      <div id="caption"></div>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 M&A Discord server. All rights reserved.</p>
   </footer>

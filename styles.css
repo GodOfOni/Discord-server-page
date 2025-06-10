@@ -168,4 +168,30 @@ footer p {
   margin: 0;
   font-size: 14px;
 }
+.join-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7289da;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+  background-color: #5b6eae;
+}
+
+.features-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+}
+
 
